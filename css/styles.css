@@ -11578,27 +11578,6 @@ html {
   font-size: 1.5rem;
 }
 
-.expand-over {
-    position: relative;
-    overflow: hidden;
-}
-
-.expand-over img {
-    transition: all 0.4s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.expand-over:hover img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 10;
-}
-
 .profile {
   position: relative;
   height: 75vw;
