@@ -11577,21 +11577,26 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-.expand-on-hover {
-    overflow: hidden;
+
+.expand-over {
     position: relative;
+    overflow: hidden;
 }
 
-.expand-on-hover img {
-    width: 100%;
-    height: auto;
+.expand-over img {
     transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
 }
 
-.expand-on-hover:hover img {
+.expand-over:hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 10;
 }
 
 .profile {
