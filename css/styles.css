@@ -11577,17 +11577,21 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-.zoom-container {
+.expand-on-hover {
     overflow: hidden;
     position: relative;
 }
 
-.zoom-container img {
-    transition: transform 0.4s ease;
+.expand-on-hover img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
 }
 
-.zoom-container:hover img {
-    transform: scale(1.1); 
+.expand-on-hover:hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .profile {
